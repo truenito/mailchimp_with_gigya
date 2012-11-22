@@ -1,0 +1,36 @@
+<html>
+<head>
+<!-- including the gigya.social.js script -->
+<style>
+    body {font-family:arial;font-size:11px}
+</style>
+<SCRIPT type="text/javascript" lang="javascript"
+    src="http://cdn.gigya.com/JS/socialize.js?apikey=2_Y82PzwJ_chSFImHXaIDJClnLyJzmk-VFOavSsaNTzl6m901s_NNxRAS0xJ3bd3_N">
+</SCRIPT>
+
+<script type="text/javascript">
+
+// Adding Flickr as a custom OpenID provider using the 'params' object:
+var params =
+{
+    customButton: {
+        "type": "openID",
+        "providerName":"Flickr",
+        "iconURL": "http://wikifiles.gigya.com/images/flickr.png",
+        "logoURL": "http://wikifiles.gigya.com/images/flickr_large.png",
+        "lastLoginIconURL":"http://wikifiles.gigya.com/images/flickr.png",
+        "position":"4",
+        "openIDURL": "https://me.yahoo.com/$USERNAME$"
+    },
+    "showTermsLink":false, // 'terms' link is hidden
+    "containerID":"loginDiv" // The component will embed itself inside the "loginDiv" DIV (will not be a popup)
+}
+</script>
+</head>
+<body>
+<div id="loginDiv"></div>
+<script type="text/javascript">
+    gigya.services.socialize.showLoginUI(params);
+</script>
+</body>
+</html>
