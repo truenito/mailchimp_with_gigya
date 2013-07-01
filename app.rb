@@ -4,7 +4,7 @@ require 'hominid'
 
 configure do
   # API Key Stuff
-  set :mailchimp_api_key, "f36ec720a12f3f66a04878caa5badc25-us6"
+  set :mailchimp_api_key, "f36ec720a12f3f66a04878caa5badc25-us6" #It's okay for this key to be on Github, stalkers.
   set :mailchimp_list_name, "Test"
 end
 
